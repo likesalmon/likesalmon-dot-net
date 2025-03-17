@@ -31,12 +31,14 @@ export default function Work() {
     <Section title="Featured Work" id="work" className="px-16 justify-center items-center pb-16">
       <div className="flex flex-col gap-4 text-white max-w-xl text-center mb-6">
         <h2 className="text-2xl font-bold font-exo">Rhyme&middot;i&middot;ness Mobile app</h2>
-        <p className="text-lg leading-loose">Create your own songs with a little help from AI.</p>
         <p className="text-lg leading-loose">
-          Tired of getting stuck after the first line? Let Rhyme&middot;i&middot;ness to fill in the
-          gaps! Just enter a genre, mood, and a name. You can start writing or have AI generate
-          lines for you. Arrange your song with intuitive drag controls then switch on Performance
-          Mode and you&apos;re ready to rock!
+          Create your own songs with a leeeeetle help from AI.
+        </p>
+        <p className="text-base leading-loose">
+          Tired of getting stuck after the first line? Let <b>Rhyme&middot;i&middot;ness</b> fill in
+          the gaps! Just enter a vibe, genre, and give your song a name. You can start writing or
+          click Help Me Out to have AI generate lines for you. Arrange your song with intuitive drag
+          controls then switch on Performance Mode and you&apos;re ready to rock!
         </p>
       </div>
       <Carousel
