@@ -1,4 +1,3 @@
-"use client";
 import TopBar from "@/components/TopBar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";

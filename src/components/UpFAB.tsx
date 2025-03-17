@@ -1,3 +1,4 @@
+"use client";
 import { ArrowUp } from "lucide-react";
 import { Button } from "./ui/button";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
