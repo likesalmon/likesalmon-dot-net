@@ -1,7 +1,9 @@
+import Section from "./Section";
+
 export default function Work() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <Section title="Work" id="work">
       <h1 className="text-4xl font-bold">Work</h1>
-    </div>
+    </Section>
   );
 }

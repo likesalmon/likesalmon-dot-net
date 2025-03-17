@@ -1,7 +1,9 @@
+import Section from "./Section";
+
 export default function Footer() {
   return (
-    <div className="flex justify-center items-center p-4 bg-slate-900">
+    <Section title="Footer" id="footer" light>
       <p className="text-white font-exo text-lg font-bold">&copy; 2025 Likesalmon Dot Net</p>
-    </div>
+    </Section>
   );
 }

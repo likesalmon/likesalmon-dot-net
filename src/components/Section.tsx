@@ -1,13 +1,23 @@
+import { cn } from "@/lib/utils";
+import SectionTitle from "./SectionTitle";
+
 interface Props {
   children: React.ReactNode;
   title?: string;
+  className?: string;
+  light?: boolean;
+  id: string;
 }
-export default function Section({ children, title }: Props) {
+
+export default function Section(props: Props) {
   return (
-    <div className="flex justify-center h-screen">
-      <div className="flex flex-col h-screen max-w-7xl">
-        {title && <h2 className="text-4xl font-bold font-exo">{title}</h2>}
-        {children}
+    <div
+      id={props.id}
+      className={cn("flex justify-center h-screen py-16", props.light && "bg-slate-900")}
+    >
+      <div className={`flex flex-col min-h-screen max-w-4xl ${props.className}`}>
+        {props.title && <SectionTitle title={props.title} />}
+        {props.children}
       </div>
     </div>
   );

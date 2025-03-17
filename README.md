@@ -1,3 +1,17 @@
+# Likesalmon Dot Next
+
+The personal website and portfolio of developer and UI designer Ammon Morris.
+
+## Colors
+
+- teal-500
+- fucshia-500
+- white
+- slate-950
+- slate-900
+
+## Overview
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
