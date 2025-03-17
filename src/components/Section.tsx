@@ -15,7 +15,7 @@ export default function Section(props: Props) {
       id={props.id}
       className={cn("flex justify-center min-h-screen", props.light && "bg-slate-900")}
     >
-      <div className={`flex flex-col min-h-screen max-w-4xl ${props.className}`}>
+      <div className={`flex flex-col min-h-screen ${props.className}`}>
         {props.title && <SectionTitle title={props.title} />}
         {props.children}
       </div>

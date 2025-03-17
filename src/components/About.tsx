@@ -4,7 +4,7 @@ import GradientBorder from "./GradientBorder";
 
 export default function About() {
   return (
-    <Section title="About" className="text-white pb-16" light id="about">
+    <Section title="About" className="text-white pb-16 max-w-4xl" light id="about">
       <div className="flex flex-wrap gap-12">
         <p className="text-lg max-w-sm leading-loose relative top-6">
           Ammon lives in Douglas, Alaska with his wife and daughter. With 17 years of experience in
@@ -32,10 +32,10 @@ export default function About() {
         </GradientBorder>
         <p className="text-lg max-w-sm leading-loose">
           Whether leading engineering teams or working closely with clients to bring their vision to
-          life, Ammon works to create a collaborative environment. His leadership style emphasizes
-          personal ownership, clear communication, and a shared commitment to excellence. He listens
-          deeply, translates complex requirements into elegant solutions, and builds software that
-          is both functional and beautifully designed.
+          life, Ammon loves a collaborative environment. His leadership style emphasizes personal
+          ownership, clear communication, and a shared commitment to excellence. He listens deeply,
+          translates complex requirements into elegant solutions, and builds software that is both
+          functional and beautifully designed.
         </p>
       </div>
     </Section>
