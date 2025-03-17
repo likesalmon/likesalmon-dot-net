@@ -1,0 +1,14 @@
+# Likesalmon Dot Net
+
+A portfolio website for developer and UI designer Ammon Morris.
+
+## Tech Stack
+
+- Next.js
+- Tailwind
+- ShadCN
+- PNPM
+
+## Miscellaneous
+
+- When installing ShadCN components, use the command `pnpm dlx shadcn@latest`

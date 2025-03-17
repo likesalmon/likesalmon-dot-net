@@ -1,9 +1,17 @@
-import Image from "next/image";
+import TopBar from "@/components/TopBar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Work from "@/components/Work";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <div className="font-exo text-4xl font-bold">Your text here</div>
+    <div className="flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)] w-full">
+      <TopBar />
+      <Hero />
+      <About />
+      <Work />
+      <Footer />
     </div>
   );
 }
