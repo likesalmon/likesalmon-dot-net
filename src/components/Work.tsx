@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
 
 const carouselItems = [
   { id: "splash", src: "/mobile-app-screenshots/splash.webp", alt: "Splash screen" },
@@ -29,35 +30,45 @@ const carouselItems = [
 export default function Work() {
   return (
     <Section title="Featured Work" id="work" className="px-16 justify-center items-center pb-16">
-      <div className="flex flex-col gap-4 text-white max-w-xl text-center mb-6">
-        <h2 className="text-2xl font-bold font-exo">Rhyme&middot;i&middot;ness Mobile app</h2>
-        <p className="text-lg leading-loose">
-          Create your own songs with a leeeeetle help from AI.
-        </p>
-        <p className="text-base leading-loose">
-          Tired of getting stuck after the first line? Let <b>Rhyme&middot;i&middot;ness</b> fill in
-          the gaps! Just enter a vibe, genre, and give your song a name. You can start writing or
-          click Help Me Out to have AI generate lines for you. Arrange your song with intuitive drag
-          controls then switch on Performance Mode and you&apos;re ready to rock!
-        </p>
+      <div className="flex flex-col md:flex-row-reverse max-w-4xl gap-16">
+        <div className="flex flex-col max-w-4xl gap-16">
+          <div className="gap-3 flex flex-col text-white max-w-sm mb-6 pt-12">
+            <div className="flex flex-col gap-1">
+              <h2 className="text-2xl font-bold font-exo">Rhyme&middot;i&middot;ness Mobile app</h2>
+              <p className="text-base leading-loose text-slate-400">
+                Create your own songs with a leeeeetle help from AI.
+              </p>
+            </div>
+            <p className="text-base leading-loose text-slate-50">
+              Tired of getting stuck after the first line? Let <b>Rhyme&middot;i&middot;ness</b>{" "}
+              fill in the gaps! Just enter a vibe, genre, and give your song a name. You can start
+              writing or click Help Me Out to have AI generate lines for you. Arrange your song with
+              intuitive drag controls then switch on Performance Mode and you&apos;re ready to rock!
+            </p>
+          </div>
+        </div>
+
+        <Carousel
+          opts={{
+            align: "center",
+            loop: true,
+          }}
+          className="w-full max-w-sm"
+        >
+          <CarouselContent>
+            {carouselItems.map((item) => (
+              <CarouselItem key={item.id} className="items-center justify-center py-6">
+                <Image src={item.src} alt={item.alt} width={438} height={893} />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+
+          <div className="relative w-64 relative left-16 py-4">
+            <CarouselPrevious />
+            <CarouselNext />
+          </div>
+        </Carousel>
       </div>
-      <Carousel
-        opts={{
-          align: "center",
-          loop: true,
-        }}
-        className="w-full max-w-sm"
-      >
-        <CarouselContent>
-          {carouselItems.map((item) => (
-            <CarouselItem key={item.id} className="items-center justify-center py-6">
-              <Image src={item.src} alt={item.alt} width={438} height={893} />
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
     </Section>
   );
 }

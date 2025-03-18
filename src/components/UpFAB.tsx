@@ -10,7 +10,7 @@ export default function UpFAB() {
     <Button
       variant="default"
       size="icon"
-      className={`fixed bottom-8 right-8 rounded-full shadow-lg transition-all duration-300 ${
+      className={`fixed top-8 left-8 rounded-full shadow-lg transition-all duration-300 ${
         isScrolled ? "opacity-100 visible cursor-pointer" : "opacity-0 invisible"
       }`}
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

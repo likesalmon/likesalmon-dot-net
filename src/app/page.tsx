@@ -2,8 +2,9 @@ import TopBar from "@/components/TopBar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Work from "@/components/Work";
-import Footer from "@/components/Footer";
 import UpFAB from "@/components/UpFAB";
+import Socials from "@/components/Socials";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <Hero />
       <About />
       <Work />
-      <Footer />
+      <Socials />
       <UpFAB />
     </div>
   );
