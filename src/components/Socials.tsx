@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Socials() {
   return (
     <Section id="socials" title="Socials" light>
-      <p className="text-lg max-w-md text-center leading-loose text-white">
+      <p className="text-lg max-w-md text-center leading-loose text-white mb-8">
         If you&apos;re looking for a developer, designer, or engineering leader who bridges
         technology and design with a collaborative mindset, let’s connect!{" "}
       </p>
@@ -21,6 +21,7 @@ export default function Socials() {
             LinkedIn
           </Button>
         </Link>
+
         <Link href="https://github.com/likesalmon/" passHref>
           <Button type="button" variant="gradient" size="lg">
             <Github size={48} />
