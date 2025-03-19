@@ -1,7 +1,7 @@
 "use client";
 
 import { Linkedin, Github, Instagram } from "lucide-react";
-import Section from "./Section";
+import Section from "./section";
 import SocialLink from "./social-link";
 import { motion } from "motion/react";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import Section from "./Section";
+import Section from "./section";
 import Image from "next/image";
 import {
   Carousel,

@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "./section-title";
 
 interface Props {
   children: React.ReactNode;

@@ -1,9 +1,9 @@
-import TopBar from "@/components/TopBar";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Work from "@/components/Work";
-import UpFAB from "@/components/UpFAB";
-import Socials from "@/components/Socials";
+import TopBar from "@/components/topbar";
+import Hero from "@/components/hero";
+import About from "@/components/about";
+import Work from "@/components/work";
+import UpFAB from "@/components/up-fab";
+import Socials from "@/components/socials";
 
 export default function Home() {
   return (

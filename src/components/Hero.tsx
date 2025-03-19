@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Section from "./Section";
+import Section from "./section";
 import { motion } from "motion/react";
 
 export default function Hero() {
