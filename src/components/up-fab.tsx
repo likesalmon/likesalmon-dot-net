@@ -15,7 +15,7 @@ export default function UpFAB() {
       }`}
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
     >
-      <ArrowUp className="size-5" />
+      <ArrowUp className="size-5" strokeWidth={3} />
     </Button>
   );
 }

@@ -8,7 +8,7 @@ import { motion } from "motion/react";
 export default function Socials() {
   return (
     <Section id="socials" title="Socials" light>
-      <div className="flex flex-col gap-8 justify-center items-center max-w-sm">
+      <div className="flex flex-col gap-8 justify-center items-center max-w-sm px-4">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

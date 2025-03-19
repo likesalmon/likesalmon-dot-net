@@ -6,8 +6,8 @@ import { motion } from "motion/react";
 
 export default function About() {
   return (
-    <Section title="About" className="items-center pb-24" light id="about">
-      <div className="text-primary-foreground max-w-lg lg:max-w-4xl">
+    <Section title="About" className="items-center pb-16" light id="about">
+      <div className="text-primary-foreground max-w-lg lg:max-w-4xl px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
           <div className="space-y-6">
             <motion.p
