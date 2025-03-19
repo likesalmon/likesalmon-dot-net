@@ -19,7 +19,7 @@ export default function SocialLink({
     >
       <div
         className={cn(
-          "flex items-center gap-2 rounded-full  text-primary-foreground shadow-xs  p-6 shadow-sm shadow-white/90",
+          "flex items-center gap-2 rounded-full text-primary-foreground shadow-xs p-4 lg:p-6 shadow-sm shadow-white/90",
           "bg-gradient-to-br from-teal-500 to-fuchsia-500",
         )}
       >
