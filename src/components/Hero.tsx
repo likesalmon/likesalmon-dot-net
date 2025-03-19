@@ -5,7 +5,10 @@ import { motion } from "motion/react";
 
 export default function Hero() {
   return (
-    <Section className="items-center justify-center gap-6 md:gap-12 relative px-4 py-8" id="hero">
+    <Section
+      className="items-center justify-center gap-6 md:gap-12 relative px-4 py-8 -mt-[60px]"
+      id="hero"
+    >
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }}>
         <Image
           src="/salmon-icon-380x338.png"
