@@ -33,9 +33,9 @@ export default function Work() {
       id="work"
       className="px-4 md:px-16 justify-center items-center pb-16"
     >
-      <div className="flex flex-col md:flex-row-reverse max-w-4xl gap-8 md:gap-16 py-6 md:py-16">
+      <div className="flex flex-col md:flex-row-reverse max-w-4xl gap-8 md:gap-16">
         <div className="flex flex-col max-w-4xl gap-8 md:gap-16">
-          <div className="gap-3 flex flex-col text-white max-w-sm mb-6 md:pt-12">
+          <div className="gap-3 flex flex-col text-white max-w-sm mb-6 md:pt-0">
             <div className="flex flex-col gap-1">
               <h2 className="text-xl md:text-2xl font-bold font-exo">
                 Rhyme&middot;i&middot;ness Mobile app
@@ -53,26 +53,26 @@ export default function Work() {
           </div>
         </div>
 
-        <Carousel
-          opts={{
-            align: "center",
-            loop: true,
-          }}
-          className="w-full max-w-sm"
-        >
-          <CarouselContent>
-            {carouselItems.map((item) => (
-              <CarouselItem key={item.id} className="items-center justify-center">
-                <Image src={item.src} alt={item.alt} width={438} height={893} />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
+        <div className="py-6 px-16 bg-slate-600 rounded-xl">
+          <Carousel
+            opts={{
+              align: "center",
+              loop: true,
+            }}
+            className="w-full max-w-sm"
+          >
+            <CarouselContent>
+              {carouselItems.map((item) => (
+                <CarouselItem key={item.id} className="items-center justify-center">
+                  <Image src={item.src} alt={item.alt} width={438} height={893} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
 
-          <div className="relative w-48 md:w-64 max-w-full relative left-18 md:left-16 py-8 md:py-4">
             <CarouselPrevious />
             <CarouselNext />
-          </div>
-        </Carousel>
+          </Carousel>
+        </div>
       </div>
     </Section>
   );
