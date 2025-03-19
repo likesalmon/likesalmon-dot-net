@@ -8,7 +8,9 @@ A portfolio website for developer and UI designer Ammon Morris.
 - Tailwind
 - ShadCN
 - PNPM
+- Motion
 
 ## Miscellaneous
 
 - When installing ShadCN components, use the command `pnpm dlx shadcn@latest`
+- The Framer Motion library used for animations is now called Motion. Motion can be installed with the command `pnpm install motion`. To import Motion, use `import { motion } from "motion/react"`.
