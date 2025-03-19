@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Socials() {
   return (
-    <Section id="socials" title="Socials" light>
+    <Section id="socials" title="Socials" light className="px-4">
       <p className="text-lg max-w-md text-center leading-loose text-white mb-8">
         If you&apos;re looking for a developer, designer, or engineering leader who bridges
         technology and design with a collaborative mindset, let’s connect!{" "}

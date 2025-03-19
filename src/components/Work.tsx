@@ -7,7 +7,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
 
 const carouselItems = [
   { id: "splash", src: "/mobile-app-screenshots/splash.webp", alt: "Splash screen" },
@@ -29,12 +28,18 @@ const carouselItems = [
 
 export default function Work() {
   return (
-    <Section title="Featured Work" id="work" className="px-16 justify-center items-center pb-16">
-      <div className="flex flex-col md:flex-row-reverse max-w-4xl gap-16">
-        <div className="flex flex-col max-w-4xl gap-16">
-          <div className="gap-3 flex flex-col text-white max-w-sm mb-6 pt-12">
+    <Section
+      title="Featured Work"
+      id="work"
+      className="px-4 md:px-16 justify-center items-center pb-16"
+    >
+      <div className="flex flex-col md:flex-row-reverse max-w-4xl gap-8 md:gap-16 py-6 md:py-16">
+        <div className="flex flex-col max-w-4xl gap-8 md:gap-16">
+          <div className="gap-3 flex flex-col text-white max-w-sm mb-6 md:pt-12">
             <div className="flex flex-col gap-1">
-              <h2 className="text-2xl font-bold font-exo">Rhyme&middot;i&middot;ness Mobile app</h2>
+              <h2 className="text-xl md:text-2xl font-bold font-exo">
+                Rhyme&middot;i&middot;ness Mobile app
+              </h2>
               <p className="text-base leading-loose text-slate-400">
                 Create your own songs with a leeeeetle help from AI.
               </p>
@@ -57,13 +62,13 @@ export default function Work() {
         >
           <CarouselContent>
             {carouselItems.map((item) => (
-              <CarouselItem key={item.id} className="items-center justify-center py-6">
+              <CarouselItem key={item.id} className="items-center justify-center">
                 <Image src={item.src} alt={item.alt} width={438} height={893} />
               </CarouselItem>
             ))}
           </CarouselContent>
 
-          <div className="relative w-64 relative left-16 py-4">
+          <div className="relative w-48 md:w-64 max-w-full relative left-18 md:left-16 py-8 md:py-4">
             <CarouselPrevious />
             <CarouselNext />
           </div>

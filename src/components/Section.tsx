@@ -13,12 +13,14 @@ export default function Section(props: Props) {
   return (
     <div
       id={props.id}
-      className={cn("flex justify-center min-h-screen", props.light && "bg-slate-900")}
+      className={cn(
+        "flex justify-center min-h-screen flex-col",
+        props.light && "bg-slate-900",
+        props.className,
+      )}
     >
-      <div className={`flex flex-col min-h-screen ${props.className}`}>
-        {props.title && <SectionTitle title={props.title} />}
-        {props.children}
-      </div>
+      {props.title && <SectionTitle title={props.title} />}
+      {props.children}
     </div>
   );
 }
