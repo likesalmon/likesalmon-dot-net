@@ -2,7 +2,6 @@
 
 import Section from "./Section";
 import Image from "next/image";
-import GradientBorder from "./GradientBorder";
 import { motion } from "motion/react";
 
 export default function About() {

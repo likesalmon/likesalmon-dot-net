@@ -1,3 +1,5 @@
+"use client";
+
 import Section from "./Section";
 import Image from "next/image";
 import {
@@ -7,6 +9,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { motion } from "motion/react";
+import { cn } from "@/lib/utils";
 
 const carouselItems = [
   { id: "splash", src: "/mobile-app-screenshots/splash.webp", alt: "Splash screen" },
@@ -28,13 +32,19 @@ const carouselItems = [
 
 export default function Work() {
   return (
-    <Section
-      title="Featured Work"
-      id="work"
-      className="px-4 md:px-16 justify-center items-center pb-16"
-    >
-      <div className="flex flex-col md:flex-row-reverse max-w-4xl gap-8 md:gap-16">
-        <div className="flex flex-col max-w-4xl gap-8 md:gap-16">
+    <Section title="Featured Work" id="work" className="pb-16">
+      <div
+        className={cn(
+          "flex flex-col gap-8 px-4 justify-center",
+          "md:px-16 md:flex-row-reverse justify-center",
+        )}
+      >
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="gap-3 flex flex-col text-white max-w-sm mb-6 md:pt-0">
             <div className="flex flex-col gap-1">
               <h2 className="text-xl md:text-2xl font-bold font-exo">
@@ -51,28 +61,36 @@ export default function Work() {
               intuitive drag controls then switch on Performance Mode and you&apos;re ready to rock!
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="py-6 px-16 bg-slate-600 rounded-xl">
-          <Carousel
-            opts={{
-              align: "center",
-              loop: true,
-            }}
-            className="w-full max-w-sm"
-          >
-            <CarouselContent>
-              {carouselItems.map((item) => (
-                <CarouselItem key={item.id} className="items-center justify-center">
-                  <Image src={item.src} alt={item.alt} width={438} height={893} />
-                </CarouselItem>
-              ))}
-            </CarouselContent>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className={cn("rounded-xl bg-gradient-to-br from-teal-500 to-fuchsia-500 p-0.5")}
+        >
+          <div className="py-6 px-16 bg-slate-900 rounded-xl">
+            <Carousel
+              opts={{
+                align: "center",
+                loop: true,
+              }}
+              className="w-full max-w-sm"
+            >
+              <CarouselContent>
+                {carouselItems.map((item) => (
+                  <CarouselItem key={item.id} className="items-center justify-center">
+                    <Image src={item.src} alt={item.alt} width={438} height={893} />
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
 
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-        </div>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </div>
+        </motion.div>
       </div>
     </Section>
   );
