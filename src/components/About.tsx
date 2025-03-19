@@ -15,17 +15,7 @@ export default function About() {
               concept to code.
             </p>
 
-            <p className="text-base lg:text-lg leading-loose">
-              Whether leading engineering teams or working closely with clients to bring their
-              vision to life, Ammon loves a collaborative environment. His leadership style
-              emphasizes personal ownership, clear communication, and a shared commitment to
-              excellence. He listens deeply, translates complex requirements into elegant solutions,
-              and builds software that is both functional and beautifully designed.
-            </p>
-          </div>
-
-          <div className="space-y-6">
-            <GradientBorder className="relative">
+            <GradientBorder>
               <Image
                 src="/headshot.jpg"
                 alt="Ammon and hid dog, Cider"
@@ -34,8 +24,10 @@ export default function About() {
                 className="rounded-lg block aspect-auto w-full"
               />
             </GradientBorder>
+          </div>
 
-            <GradientBorder>
+          <div className="space-y-6">
+            <GradientBorder className="relative">
               <Image
                 src="/sunset-cider.jpg"
                 alt="Beautiful sunset over Sandy Beach"
@@ -44,6 +36,14 @@ export default function About() {
                 className="rounded-lg w-full"
               />
             </GradientBorder>
+
+            <p className="text-base lg:text-lg leading-loose">
+              Whether leading engineering teams or working closely with clients to bring their
+              vision to life, Ammon loves a collaborative environment. His leadership style
+              emphasizes personal ownership, clear communication, and a shared commitment to
+              excellence. He listens deeply, translates complex requirements into elegant solutions,
+              and builds software that is both functional and beautifully designed.
+            </p>
           </div>
         </div>
       </div>
