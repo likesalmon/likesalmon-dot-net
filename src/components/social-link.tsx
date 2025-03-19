@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { SquareArrowOutUpRight } from "lucide-react";
 import Link from "next/link";
 
 export default function SocialLink({
@@ -14,7 +15,7 @@ export default function SocialLink({
     <Link
       href={href}
       target="_blank"
-      className="flex items-center flex-col gap-2 hover:opacity-80 hover:top-0.5 hover:left-0.5 transition-all duration-300 relative"
+      className="flex items-center flex-col gap-3.5 hover:opacity-80 hover:top-0.5 hover:left-0.5 transition-all duration-300 relative"
     >
       <div
         className={cn(
@@ -24,7 +25,9 @@ export default function SocialLink({
       >
         {icon}
       </div>
-      <div className="text-base text-white font-medium font-exo">{label}</div>
+      <div className="text-base text-white font-medium font-exo flex items-center gap-2">
+        {label} <SquareArrowOutUpRight className="size-4 inline-block" />
+      </div>
     </Link>
   );
 }

@@ -14,7 +14,7 @@ export default function Section(props: Props) {
     <div
       id={props.id}
       className={cn(
-        "flex justify-center min-h-screen flex-col",
+        "flex min-h-screen flex-col items-center justify-center",
         props.light && "bg-slate-900",
         props.className,
       )}
